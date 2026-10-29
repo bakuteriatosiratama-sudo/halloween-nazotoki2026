@@ -1,0 +1,7 @@
+/* 全ステージ共通の4画面ナビゲーション */
+body{padding-bottom:210px!important}
+.game-bottom-nav{position:fixed;bottom:0;left:0;right:0;z-index:100;background:#17121ff7;border-top:2px solid #bc9159;box-shadow:0 -8px 28px #090711bb;padding:10px max(12px,calc((100vw - 850px)/2)) max(12px,env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.game-bottom-nav button{min-width:0;min-height:48px;border:1px solid #c8a16d;border-radius:10px;background:#46304b;color:#fff2d6;padding:8px 7px;font-weight:700;font-size:clamp(11px,2.8vw,14px);line-height:1.35;white-space:normal;cursor:pointer}
+.game-bottom-nav button[disabled]{opacity:.45;cursor:not-allowed;background:#27212e;border-color:#6a5b66}
+.game-bottom-nav button[aria-current="page"]{background:#e9a45b;color:#281927;border-color:#fbd39c}
+@media(min-width:680px){body{padding-bottom:155px!important}.game-bottom-nav{grid-template-columns:repeat(4,minmax(0,1fr))}}
